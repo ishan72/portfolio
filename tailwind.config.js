@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        arapey:['Arapey']
+      },
       colors: {
         background: '#EDF1D6',
         lightGreen: '#9DC08B',
