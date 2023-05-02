@@ -24,6 +24,7 @@ function HomeComponent() {
             className="w-full"
             download="Ishan's Resume"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="flex  items-center justify-center">
               <AiFillFilePdf size="1em" />

@@ -33,7 +33,7 @@ const DashArea = ({ selectedOption }) => {
           </Physics>
         )}
       </Canvas>
-      {selectedOption == 0 && <HomeComponent />}
+      {selectedOption === 0 && <HomeComponent />}
       {selectedOption === 1 && <EducationComponent />}
     </div>
   );
