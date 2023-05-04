@@ -5,11 +5,12 @@ import { Lamp } from "./items";
 import { MeshReflectorMaterial } from "@react-three/drei";
 import HomeComponent from "./HomeComponent";
 import EducationComponent from "./EducationComponent";
+import WorkSection from "./WorkSection";
+import ProjectComponent from "./ProjectComponent";
 
 const DashArea = ({ selectedOption }) => {
-  console.log(selectedOption);
   return (
-    <div className="h-full relative">
+    <div className="h-full w-full relative">
       <Canvas
         dpr={[1, 2]}
         shadows
@@ -24,7 +25,7 @@ const DashArea = ({ selectedOption }) => {
             <Lamp position={[0, 15, 0]} />
             <Floor position={[0, -6, 0]} rotation={[-Math.PI / 2, 0, 0]} />
           </Physics>
-        ) : selectedOption === 1 ? (
+        ) : selectedOption === 1 || selectedOption === 2 ? (
           <></>
         ) : (
           <Physics allowSleep={false} iterations={15} gravity={[0, -100, 0]}>
@@ -35,6 +36,9 @@ const DashArea = ({ selectedOption }) => {
       </Canvas>
       {selectedOption === 0 && <HomeComponent />}
       {selectedOption === 1 && <EducationComponent />}
+      {/* {selectedOption === 2 && <WorkSection />} */}
+      <WorkSection />
+      <ProjectComponent />
     </div>
   );
 };

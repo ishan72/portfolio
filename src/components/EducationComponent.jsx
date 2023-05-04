@@ -30,7 +30,7 @@ function EducationComponent() {
       </div>
       <div className="max-w-xs rounded-xl overflow-hidden shadow-lg bg-white">
         <img
-          className="w-full h-36 object-contain"
+          className="w-full h-36 object-fill"
           src={logo2}
           alt="xavier college, nepal"
         />

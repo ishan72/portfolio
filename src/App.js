@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full h-screen bg-color2">
+      <div className="w-screen h-screen bg-color2">
         <div className="flex flex-row space-x-12 text-white w-4/5 mx-auto cursor-pointer">
           <p
             className={`${
