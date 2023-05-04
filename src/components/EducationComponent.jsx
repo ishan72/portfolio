@@ -4,7 +4,7 @@ import logo2 from "../assets/xavier.png";
 function EducationComponent() {
   return (
     <div className="absolute top-8 left-36 transform text-white flex space-x-4">
-      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+      <div className="max-w-xs rounded-xl overflow-hidden shadow-lg bg-white">
         <img
           class="w-full h-36 object-fill"
           src={logo}
@@ -28,9 +28,9 @@ function EducationComponent() {
           </p>
         </div>
       </div>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+      <div className="max-w-xs rounded-xl overflow-hidden shadow-lg bg-white">
         <img
-          className="w-full h-36 object-contain"
+          className="w-full h-36 object-fill"
           src={logo2}
           alt="xavier college, nepal"
         />

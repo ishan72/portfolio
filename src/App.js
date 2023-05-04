@@ -7,11 +7,11 @@ function App() {
 
   return (
     <>
-      <div className="w-full h-screen bg-color2">
+      <div className="w-screen h-screen bg-color2">
         <div className="flex flex-row space-x-12 text-white w-4/5 mx-auto cursor-pointer">
           <p
             className={`${
-              selectedOption == 0 ? "border-b-4 border-white" : ""
+              selectedOption === 0 ? "border-b-4 border-white" : ""
             } p-1`}
             onClick={() => setSelectedOption(0)}
           >
@@ -19,7 +19,7 @@ function App() {
           </p>
           <p
             className={`${
-              selectedOption == 1 ? "border-b-4 border-white" : ""
+              selectedOption === 1 ? "border-b-4 border-white" : ""
             } p-1`}
             onClick={() => setSelectedOption(1)}
           >
@@ -27,7 +27,7 @@ function App() {
           </p>
           <p
             className={`${
-              selectedOption == 2 ? "border-b-4 border-white" : ""
+              selectedOption === 2 ? "border-b-4 border-white" : ""
             } p-1`}
             onClick={() => setSelectedOption(2)}
           >
@@ -35,7 +35,7 @@ function App() {
           </p>
           <p
             className={`${
-              selectedOption == 3 ? "border-b-4 border-white" : ""
+              selectedOption === 3 ? "border-b-4 border-white" : ""
             } p-1`}
             onClick={() => setSelectedOption(3)}
           >
@@ -43,7 +43,7 @@ function App() {
           </p>
           <p
             className={`${
-              selectedOption == 4 ? "border-b-4 border-white" : ""
+              selectedOption === 4 ? "border-b-4 border-white" : ""
             } p-1`}
             onClick={() => setSelectedOption(4)}
           >
