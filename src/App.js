@@ -1,19 +1,29 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 import DashArea from "./components/dashArea";
 
 function App() {
   const [selectedOption, setSelectedOption] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const nextPosition = window.scrollY + window.innerHeight;
+    window.scrollTo({ top: nextPosition, behavior: "smooth" });
+    setScrollPosition(nextPosition);
+  };
 
   return (
     <>
-      <div className="w-screen h-screen bg-color2">
-        <div className="flex flex-row space-x-12 text-white w-4/5 mx-auto cursor-pointer">
+      <div className="w-screen h-screen overflow-x-hidden bg-color2">
+        {/* <div className="flex flex-row space-x-12 text-white w-4/5 mx-auto cursor-pointer">
           <p
             className={`${
               selectedOption === 0 ? "border-b-4 border-white" : ""
             } p-1`}
-            onClick={() => setSelectedOption(0)}
+            onClick={() => {
+              setSelectedOption(0);
+              handleScroll(0);
+            }}
           >
             Home
           </p>
@@ -29,7 +39,10 @@ function App() {
             className={`${
               selectedOption === 2 ? "border-b-4 border-white" : ""
             } p-1`}
-            onClick={() => setSelectedOption(2)}
+            onClick={() => {
+              setSelectedOption(2);
+              handleScroll(100);
+            }}
           >
             Work Experience
           </p>
@@ -45,11 +58,14 @@ function App() {
             className={`${
               selectedOption === 4 ? "border-b-4 border-white" : ""
             } p-1`}
-            onClick={() => setSelectedOption(4)}
+            onClick={() => {
+              setSelectedOption(4);
+              handleScroll(180);
+            }}
           >
             Projects
           </p>
-        </div>
+        </div> */}
         <DashArea selectedOption={selectedOption} />
       </div>
     </>
