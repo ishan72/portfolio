@@ -1,48 +1,46 @@
 import React from "react";
-import reactlogo from "../assets/logos/react16.png";
-import htmllogo from "../assets/logos/html16.png";
-import csslogo from "../assets/logos/css16.png";
+import { projectInvolved } from "../constant/Information";
+import StackDisplayComponent from "./StackDisplayComponent";
 
 function ProjectList() {
   return (
-    <div className="py-4 font-arapey text-white">
-      <div>
-        <h1 className="text-2xl">Projects</h1>
+    <div className="flex flex-col justify-center font-arapey h-4/5 bg-warmBeige">
+      <div className="md:w-11/12 md:mx-auto">
+        <h1 className="text-2xl md:text-4xl text-navyBlue">Projects</h1>
       </div>
-      <div className="w-11/12 mx-auto">
-        <div className="rounded-lg p-2 bg-white text-black">
-          <div className="flex flex-wrap md:items-center">
-            <h3 className="w-2/4 font-bold text-lg md:w-1/5">
-              PPSC web portal
-            </h3>
-            <div className="w-2/4 flex flex-row space-x-2 justify-end md:w-1/4 md:space-x-1 md:justify-center">
-              <img
-                src={reactlogo}
-                alt="React logo"
-                className="md:inline-block md:h-8 md:w-8"
-              />
-              <img
-                src={htmllogo}
-                alt="HTML logo"
-                className="md:inline-block md:h-8 md:w-8"
-              />
-              <img
-                src={csslogo}
-                alt="CSS logo"
-                className="md:inline-block md:h-8 md:w-8"
-              />
-            </div>
-            <div className="w-full md:flex-1">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus dicta fugiat corporis deserunt, error architecto
-                voluptate quibusdam quod, incidunt vitae nostrum voluptatibus
-                soluta. Odit similique architecto accusantium dolorem tempora
-                quae.
-              </p>
-            </div>
-          </div>
+      <div className="w-11/12 mx-auto mt-2 md:mt-4">
+        <div className="hidden md:inline-block md:flex md:flex-wrap text-center py-2 text-burgundry text-2xl">
+          <h3 className="w-1/5">Title</h3>
+          <h3 className="w-1/4">Stack</h3>
+          <h3 className="flex-1">Detail</h3>
         </div>
+        {projectInvolved.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className={`p-2 ${
+                index === 0 || index % 2 === 0 ? "bg-paleGreen" : "bg-bisque"
+              } text-forestGreen ${index === 0 ? "rounded-t-lg" : ""} ${
+                index === projectInvolved.length - 1 ? "rounded-b-lg" : ""
+              }`}
+            >
+              <div className="flex flex-wrap md:items-center">
+                <h3 className="w-2/4 font-bold text-lg md:w-1/5">
+                  {item.name}
+                </h3>
+                <div className="w-2/4 flex flex-row space-x-1 justify-end md:w-1/4 md:justify-center">
+                  {item.stackUsed &&
+                    item.stackUsed.map((item, index) => {
+                      return <StackDisplayComponent key={index} item={item} />;
+                    })}
+                </div>
+                <div className="w-full md:flex-1 md:text-md lg:text-lg">
+                  <p>{item.detail}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
