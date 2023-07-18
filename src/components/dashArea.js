@@ -7,6 +7,7 @@ import HomeComponent from "./HomeComponent";
 import EducationComponent from "./EducationComponent";
 import WorkSection from "./WorkSection";
 import ProjectComponent from "./ProjectComponent";
+import ProjectList from "./ProjectList";
 
 const DashArea = (props) => {
   const { selectedOption } = props;
@@ -41,7 +42,8 @@ const DashArea = (props) => {
       {selectedOption === 1 && <EducationComponent />}
       {/* {selectedOption === 2 && <WorkSection />} */}
       <WorkSection />
-      <ProjectComponent />
+      {/* <ProjectComponent /> */}
+      <ProjectList />
     </div>
   );
 };
