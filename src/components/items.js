@@ -9,7 +9,6 @@ import {
 } from "@react-three/cannon";
 
 export function Lamp(props) {
-  console.log(props);
   const [target] = useState(() => new THREE.Object3D());
 
   const [fixed] = useSphere(() => ({

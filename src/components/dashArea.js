@@ -5,9 +5,8 @@ import { Lamp } from "./items";
 import { MeshReflectorMaterial } from "@react-three/drei";
 import HomeComponent from "./HomeComponent";
 import EducationComponent from "./EducationComponent";
-import WorkSection from "./WorkSection";
-import ProjectComponent from "./ProjectComponent";
 import ProjectList from "./ProjectList";
+import WorkList from "./WorkList";
 
 const DashArea = (props) => {
   const { selectedOption } = props;
@@ -40,9 +39,8 @@ const DashArea = (props) => {
       </Canvas>
       {selectedOption === 0 && <HomeComponent />}
       {selectedOption === 1 && <EducationComponent />}
-      {/* {selectedOption === 2 && <WorkSection />} */}
-      <WorkSection />
-      {/* <ProjectComponent /> */}
+      {/* {selectedOption === 2 && <WorkList />} */}
+      <WorkList />
       <ProjectList />
     </div>
   );
