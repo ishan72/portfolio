@@ -36,7 +36,7 @@ export const experienceInvolved = [
   {
     id: 2,
     role: "Junior Software Developer",
-    date: "2021-2022",
+    date: "2020-2021",
     companyName: "InfoDevelopers Pvt. Ltd",
     link: "https://infodev.com.np/",
     detail:
@@ -46,7 +46,7 @@ export const experienceInvolved = [
   {
     id: 3,
     role: "Front-end Intern",
-    date: "2021-2022",
+    date: "2019",
     companyName: "Treeleaf Technology",
     link: "https://treeleaf.ai/",
     detail:
