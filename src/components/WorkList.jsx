@@ -19,24 +19,28 @@ function WorkList() {
             {experienceInvolved &&
               experienceInvolved.map((item, index) => {
                 return (
-                  <div key={index} className="flex space-x-8">
-                    <div className="text-burgundry md:text-xl lg:text-2xl">
+                  <div key={index} className="flex space-x-4">
+                    <div className="text-burgundry md:text-xl lg:text-2xl flex-1">
                       {item.date}
                     </div>
-                    <div>
+                    <div className="w-3/4">
                       <a
                         href={item.link}
+                        rel="noreferrer"
                         target="_blank"
                         className="text-burgundry md:text-xl lg:text-2xl hover:underline"
                       >
                         {item.role} &#x2022; {item.companyName}
                       </a>
                       <p className="text-forestGreen text-lg">{item.detail}</p>
-                      <div className="mt-2 mb-12 flex space-x-4">
+                      <div className="flex flex-wrap  md:space-x-4 pb-4">
                         {item.tags &&
                           item.tags.map((tag, index) => {
                             return (
-                              <div className="bg-paleGreen text-darkGreen rounded-xl py-1 px-4">
+                              <div
+                                key={index}
+                                className="bg-paleGreen text-darkGreen rounded-xl py-1 px-4"
+                              >
                                 {tag}
                               </div>
                             );
