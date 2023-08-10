@@ -1,5 +1,3 @@
-import { Lightformer } from "@react-three/drei";
-
 export const StackEnum = {
   VALUE_HTML: "HTML",
   VALUE_CSS: "CSS",
@@ -35,8 +33,8 @@ export const experienceInvolved = [
   },
   {
     id: 2,
-    role: "Junior Software Developer",
-    date: "2020-2021",
+    role: "Software Developer",
+    date: "2019-2021",
     companyName: "InfoDevelopers Pvt. Ltd",
     link: "https://infodev.com.np/",
     detail:

@@ -7,7 +7,6 @@ import { StackEnum } from "../constant/Information";
 function StackDisplayComponent({ item }) {
   switch (item) {
     case StackEnum.VALUE_HTML:
-      console.log("1");
       return (
         <img
           src={htmllogo}
@@ -16,7 +15,6 @@ function StackDisplayComponent({ item }) {
         />
       );
     case StackEnum.VALUE_CSS:
-      console.log("2");
       return (
         <img
           src={csslogo}

@@ -31,6 +31,8 @@ module.exports = {
         bisque: "#F6EFD9",
         mutedLavender: " #E6E6F5 ",
         mintGreen: "#BDFCC9",
+        darkMintGreen: "#95E2A2",
+        paleMintGreen: "#CCE6CC",
         darkGreen: " #003300",
       },
     },
