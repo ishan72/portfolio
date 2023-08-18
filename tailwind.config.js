@@ -34,6 +34,8 @@ module.exports = {
         darkMintGreen: "#95E2A2",
         paleMintGreen: "#CCE6CC",
         darkGreen: " #003300",
+        lavender: "#D9CCE6",
+        darkSlateGray: "#2F4F4F",
       },
     },
   },
