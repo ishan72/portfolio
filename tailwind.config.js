@@ -36,6 +36,7 @@ module.exports = {
         darkGreen: " #003300",
         lavender: "#D9CCE6",
         darkSlateGray: "#2F4F4F",
+        lightPurple: "#333333",
       },
     },
   },

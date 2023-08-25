@@ -52,3 +52,26 @@ export const experienceInvolved = [
     tags: ["HTML", "CSS", "JavaScript", "Git"],
   },
 ];
+
+export const techstack = [
+  {
+    name: "HTML",
+    value: 90,
+  },
+  {
+    name: "CSS",
+    value: 90,
+  },
+  {
+    name: "React",
+    value: 90,
+  },
+  {
+    name: "JavaScript",
+    value: 80,
+  },
+  {
+    name: "Node.js",
+    value: 50,
+  },
+];
