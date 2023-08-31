@@ -19,7 +19,7 @@ function WorkList() {
             {experienceInvolved &&
               experienceInvolved.map((item, index) => {
                 return (
-                  <div key={index} className="flex space-x-4">
+                  <div key={index} className="flex space-x-4 mb-8">
                     <div className="text-burgundry md:text-xl lg:text-2xl flex-1">
                       {item.date}
                     </div>
@@ -33,7 +33,7 @@ function WorkList() {
                         {item.role} &#x2022; {item.companyName}
                       </a>
                       <p className="text-forestGreen text-lg">{item.detail}</p>
-                      <div className="flex flex-wrap  md:space-x-4 pb-4">
+                      <div className="flex flex-wrap  md:space-x-4 mt-2">
                         {item.tags &&
                           item.tags.map((tag, index) => {
                             return (

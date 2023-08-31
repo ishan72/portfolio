@@ -71,6 +71,10 @@ export const techstack = [
     value: 80,
   },
   {
+    name: "TypeScript",
+    value: 80,
+  },
+  {
     name: "Node.js",
     value: 50,
   },
