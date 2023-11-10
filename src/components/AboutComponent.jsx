@@ -68,7 +68,7 @@ function AboutComponent() {
                     >
                       <div className={``}></div>
                       <p className={` text-right text-white font-bold`}>
-                        {item.value}%
+                        {item.value}
                       </p>
                     </div>
                   </div>

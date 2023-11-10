@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import DashArea from "./components/dashArea";
 
 function App() {

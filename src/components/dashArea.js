@@ -4,6 +4,7 @@ import ProjectList from "./ProjectList";
 import WorkList from "./WorkList";
 import HomePage from "./HomePageComponent";
 import AboutComponent from "./AboutComponent";
+import ContactComponent from "./ContactComponent";
 
 const DashArea = () => {
   return (
@@ -12,6 +13,7 @@ const DashArea = () => {
       <AboutComponent />
       <WorkList />
       <ProjectList />
+      <ContactComponent />
     </div>
   );
 };

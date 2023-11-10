@@ -4,7 +4,7 @@ import StackDisplayComponent from "./StackDisplayComponent";
 
 function ProjectList() {
   return (
-    <div className="flex flex-col justify-center font-arapey h-4/5 bg-warmBeige">
+    <div className="flex flex-col justify-center h-4/5 bg-warmBeige">
       <div className="md:w-11/12 md:mx-auto">
         <h1 className="text-2xl md:text-4xl text-navyBlue">Projects</h1>
       </div>

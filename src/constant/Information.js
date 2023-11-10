@@ -55,27 +55,27 @@ export const experienceInvolved = [
 
 export const techstack = [
   {
-    name: "HTML",
-    value: 90,
-  },
-  {
-    name: "CSS",
-    value: 90,
-  },
-  {
-    name: "React",
-    value: 90,
+    name: "HTML/CSS",
+    value: "Expert",
   },
   {
     name: "JavaScript",
-    value: 80,
+    value: "Expert",
+  },
+  {
+    name: "React",
+    value: "Expert",
   },
   {
     name: "TypeScript",
-    value: 80,
+    value: "Intermediate",
   },
   {
-    name: "Node.js",
-    value: 50,
+    name: "Python / C++ / Node.js",
+    value: "Intermediate",
+  },
+  {
+    name: "Android Development",
+    value: "Intermediate",
   },
 ];
