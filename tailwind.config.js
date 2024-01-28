@@ -7,6 +7,10 @@ module.exports = {
         arapey: ["Arapey"],
       },
       colors: {
+        background1: "#42b883",
+        text1: "#35495e",
+        button1: "#347474",
+        button2: "#ff7e67",
         background: "#EDF1D6",
         warmBeige: "#F2EFE9",
         lightGreen: "#9DC08B",

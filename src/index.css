@@ -3,12 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@600&family=Lato:ital,wght@0,300;1,900&family=Oswald:wght@700&display=swap");
 
-body {
-  color: #313136;
-  font-size: "1.2rem";
-  font-family: "Inconsolata", monospace;
-}
-
 * {
   scrollbar-width: thin;
 }

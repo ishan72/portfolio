@@ -1,19 +1,35 @@
 import React from "react";
+import downloadLogo from "../assets/logos/download_icon.png";
 
 function HomePage() {
+  const downloadURL = "http://localhost:3000/Ishan_Dahal_Resume.pdf";
+  const handleDownloadButton = () => {
+    const fileName = downloadURL.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = downloadURL;
+    console.log(fileName);
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
-    <div className="min-h-screen h-screen bg-paleMintGreen text-gray-600 flex flex-col justify-center">
+    <div className="min-h-screen h-screen bg-background1 text-white flex flex-col justify-center">
       <div className="mx-auto w-11/12 text-center">
-        <p className="sm:text-3xl md:text-4xl lg:text-5xl lg:tracking-wider lg:pb-4">
+        <p className="text-5xl xl:text-8xl lg:tracking-wider lg:pb-4">
           Hello, I'm Ishan Dahal.
         </p>
-        <p className="sm:text-lg md:text-xl lg:text-3xl">
-          Front-end Developer | Programmer
+        <p className="text-3xl xl:text-5xl mt-4">
+          Full-Stack Developer | AI enthusiast
         </p>
-        <div className="pt-8">
-          <div className="inline cursor-pointer border border-gray-600 py-3 px-4 lg:py-4 lg:px-8 rounded-full text-2xl hover:bg-white hover:text-black hover:border-white">
-            More on me...
-          </div>
+        <div className="flex justify-center pt-8 text-white">
+          <button
+            onClick={() => handleDownloadButton()}
+            className="flex cursor-pointer py-3 px-4 lg:py-4 lg:px-8 rounded-lg text-2xl bg-button2 text-black hover:opacity-80"
+          >
+            <img src={downloadLogo} alt="Download icon" />
+            <span>Resume</span>
+          </button>
         </div>
       </div>
     </div>
