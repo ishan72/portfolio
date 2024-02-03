@@ -25,7 +25,7 @@ function HomePage() {
         <div className="flex justify-center pt-8 text-white">
           <button
             onClick={() => handleDownloadButton()}
-            className="flex cursor-pointer py-3 px-4 lg:py-4 lg:px-8 rounded-lg text-2xl bg-button2 text-black hover:opacity-80"
+            className="flex cursor-pointer shadow-md py-3 px-4 lg:py-4 lg:px-8 rounded-lg text-2xl bg-button2 text-black hover:opacity-80"
           >
             <img src={downloadLogo} alt="Download icon" />
             <span>Resume</span>
