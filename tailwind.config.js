@@ -6,15 +6,17 @@ module.exports = {
       fontFamily: {
         arapey: ["Arapey"],
       },
+      keyframes: {
+        bgAnimation: {},
+      },
       colors: {
         background1: "#42b883",
         text1: "#35495e",
         button1: "#347474",
-        button2: "#ff7e67",
+        button2: "#ea580c",
         background: "#EDF1D6",
         warmBeige: "#F2EFE9",
         lightGreen: "#9DC08B",
-        green: "#609966",
         darkGreen: "#40513B",
         color2: "#171720",
         color3: "#23232A",
