@@ -3,7 +3,7 @@ import downloadLogo from "../assets/logos/download_icon.png";
 
 function HomePage() {
   const downloadURL =
-    "https://github.com/ishan72/portfolio/tree/master/src/assets";
+    "https://github.com/ishan72/portfolio/tree/master/src/assets/Resume.pdf";
   const handleDownloadButton = () => {
     const fileName = downloadURL.split("/").pop();
     const aTag = document.createElement("a");
