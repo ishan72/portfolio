@@ -2,7 +2,8 @@ import React from "react";
 import downloadLogo from "../assets/logos/download_icon.png";
 
 function HomePage() {
-  const downloadURL = "http://localhost:3000/Ishan_Dahal_Resume.pdf";
+  const downloadURL =
+    "https://github.com/ishan72/portfolio/tree/master/src/assets";
   const handleDownloadButton = () => {
     const fileName = downloadURL.split("/").pop();
     const aTag = document.createElement("a");
