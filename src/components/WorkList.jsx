@@ -11,7 +11,7 @@ function WorkList() {
         <div className="flex flex-col lg:flex-row lg:items-center mt-4">
           <div className="lg:w-1/2">
             <p className="md:text-xl lg:text-2xl lg:w-4/5 text-forestGreen">
-              I have 3 years of professional software development experience,
+              I have 5 years of professional software development experience,
               specializing in front-end development.
             </p>
           </div>

@@ -49,7 +49,7 @@ function AboutComponent() {
               <img src={MyPic} alt="my_pic" />
             </div>
             <p className="w-full text-center text-darkSlateGray md:w-6/12">
-              Having 3+ years of professional experience in front-end
+              Having 5+ years of professional experience in UI/UX design &
               development, I have passion to create visually appealing and
               interactive UI.
             </p>

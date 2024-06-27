@@ -23,7 +23,7 @@ export const projectInvolved = [
 export const experienceInvolved = [
   {
     id: 1,
-    role: "Software Engineer",
+    role: "UI/UX Engineer",
     date: "2021-2022",
     companyName: "SeeLogic International",
     link: "https://seelogic.co.uk/",
@@ -33,7 +33,7 @@ export const experienceInvolved = [
   },
   {
     id: 2,
-    role: "Software Developer",
+    role: "Web Developer",
     date: "2019-2021",
     companyName: "InfoDevelopers Pvt. Ltd",
     link: "https://infodev.com.np/",
@@ -43,8 +43,8 @@ export const experienceInvolved = [
   },
   {
     id: 3,
-    role: "Front-end Intern",
-    date: "2019",
+    role: "Junior Web Designer & Developer",
+    date: "2018-2019",
     companyName: "Treeleaf Technology",
     link: "https://treeleaf.ai/",
     detail:
