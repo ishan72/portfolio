@@ -21,6 +21,12 @@
   /* border: 3px solid "#EDF1D6"; */
 }
 
+.profile-pic {
+  background-image: url("../src/assets/logos/mypic.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .box {
   position: relative;
   border-radius: 20px;

@@ -10,6 +10,7 @@ module.exports = {
         bgAnimation: {},
       },
       colors: {
+        borderColor: "#ea580c",
         background1: "#42b883",
         text1: "#35495e",
         button1: "#347474",

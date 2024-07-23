@@ -10,10 +10,10 @@ const DashArea = () => {
   return (
     <div className="h-full w-full relative font-arapey">
       <HomePage />
-      <AboutComponent />
+      {/* <AboutComponent />
       <WorkList />
       <ProjectList />
-      <ContactComponent />
+      <ContactComponent /> */}
     </div>
   );
 };
