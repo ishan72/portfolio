@@ -33,7 +33,9 @@ function HeroSection() {
         <ul className="list-none w-full flex flex-col justify-center items-center text-xl space-y-4">
           <li className="flex space-x-4">
             <img src={checkmarkLogo} alt="checkmark" />
-            <p>Expert in front-end development.</p>
+            <p className="italic">
+              React, Angular, Spring Boot, HTML5, CSS3 developer
+            </p>
           </li>
           <li className="flex space-x-4">
             <img src={checkmarkLogo} alt="checkmark" />
