@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         borderColor: "#ea580c",
         background1: "#42b883",
-        text1: "#35495e",
+        text1: "#173B45",
         button1: "#347474",
         button2: "#ea580c",
         background: "#EDF1D6",

@@ -4,18 +4,6 @@ import downloadLogo from "../assets/logos/download_icon.png";
 import HeroSection from "./sections/HeroSection";
 
 function HomePage() {
-  const downloadURL =
-    "https://github.com/ishan72/portfolio/tree/master/src/assets/IshanDahal.docx";
-  const handleDownloadButton = () => {
-    const fileName = downloadURL.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = downloadURL;
-    console.log(fileName);
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  };
   return (
     <div className="h-full bg-gradient-to-tl from-white via-green-400 to-white flex justify-center items-center">
       <div className="w-11/12 h-4/5 box">
