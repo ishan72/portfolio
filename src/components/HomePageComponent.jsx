@@ -17,7 +17,7 @@ function HomePage() {
     aTag.remove();
   };
   return (
-    <div className="h-full bg-gradient-to-t from-green-400 via-green-900 to-green-500 flex justify-center items-center">
+    <div className="h-full bg-gradient-to-tl from-white via-green-400 to-white flex justify-center items-center">
       <div className="w-11/12 h-4/5 box">
         <div className="z-10 h-full w-full p-4">
           <NavSection />

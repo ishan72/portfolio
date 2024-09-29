@@ -3,16 +3,16 @@ import downloadLogo from "../../assets/logos/download_icon.png";
 import checkmarkLogo from "../../assets/logos/checkmark.svg";
 
 function HeroSection() {
-  const downloadURL =
-    "https://github.com/ishan72/portfolio/tree/master/src/assets/IshanDahal.docx";
-  const handleDownloadButton = () => {
-    const fileName = downloadURL.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = downloadURL;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
+  const DownloadPDF = () => {
+    return (
+      <div>
+        <a href="/Ishan_Dahal_Resume.pdf" download="Ishan_Dahal_Resume">
+          <div className="flex cursor-pointer shadow-md py-2 px-4 lg:py-2 lg:px-8 rounded-lg text-2xl bg-button2 hover:bg-gradient-to-r from-orange-600 via-orange-900 to-black">
+            <img src={downloadLogo} alt="Download icon" /> Resume
+          </div>
+        </a>
+      </div>
+    );
   };
   return (
     <div className="h-full flex justify-center items-center">
@@ -47,13 +47,7 @@ function HeroSection() {
           </li>
         </ul>
         <div className="flex w-full h-full justify-center items-center">
-          <button
-            onClick={() => handleDownloadButton()}
-            className="flex cursor-pointer shadow-md py-2 px-4 lg:py-2 lg:px-8 rounded-lg text-2xl bg-button2 hover:bg-gradient-to-r from-orange-600 via-orange-900 to-black"
-          >
-            <img src={downloadLogo} alt="Download icon" />
-            <span>Resume</span>
-          </button>
+          <DownloadPDF />
         </div>
       </div>
     </div>

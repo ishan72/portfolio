@@ -47,7 +47,8 @@
 .box::after {
   content: "";
   position: absolute;
-  background: linear-gradient(to top, #68d391, #14532d, #22c55e);
+  /* background: linear-gradient(to top, #68d391, #14532d, #22c55e); */
+  background: linear-gradient(to top right, #86e9ac, #50e188, #22c55e);
   inset: 5px;
   border-radius: 20px;
 }
