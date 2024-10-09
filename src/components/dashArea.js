@@ -1,19 +1,12 @@
 import React from "react";
-
-import ProjectList from "./ProjectList";
-import WorkList from "./WorkList";
 import HomePage from "./HomePageComponent";
-import AboutComponent from "./AboutComponent";
-import ContactComponent from "./ContactComponent";
+import SkillSection from "./sections/SkillSection";
 
 const DashArea = () => {
   return (
-    <div className="h-full w-full relative font-arapey">
+    <div className="h-auto font-arapey">
       <HomePage />
-      {/* <AboutComponent />
-      <WorkList />
-      <ProjectList />
-      <ContactComponent /> */}
+      <SkillSection />
     </div>
   );
 };

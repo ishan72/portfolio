@@ -1,8 +1,51 @@
+import react from "../assets/logos/react.png";
+import javaScript from "../assets/logos/javascript.png";
+import html from "../assets/logos/html.webp";
+import css from "../assets/logos/css.svg";
+import redux from "../assets/logos/redux.svg";
+import nextjs from "../assets/logos/nextjs.svg";
+import typeScript from "../assets/logos/typescript.png";
+import github from "../assets/logos/github.svg";
 export const StackEnum = {
   VALUE_HTML: "HTML",
   VALUE_CSS: "CSS",
   VALUE_JAVASCRIPT: "JAVASCRIPT",
 };
+
+export const skills = [
+  {
+    name: "React JS",
+    image: react,
+  },
+  {
+    name: "JavaScript",
+    image: javaScript,
+  },
+  {
+    name: "HTML",
+    image: html,
+  },
+  {
+    name: "CSS",
+    image: css,
+  },
+  {
+    name: "Redux",
+    image: redux,
+  },
+  {
+    name: "Next JS",
+    image: nextjs,
+  },
+  {
+    name: "TypeScript",
+    image: typeScript,
+  },
+  {
+    name: "Github",
+    image: github,
+  },
+];
 export const projectInvolved = [
   {
     id: 1,

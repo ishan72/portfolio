@@ -1,6 +1,7 @@
 import React from "react";
 import downloadLogo from "../../assets/logos/download_icon.png";
 import checkmarkLogo from "../../assets/logos/checkmark.svg";
+import Typewriter from "../../utils/Typerwriter";
 
 function HeroSection() {
   const DownloadPDF = () => {
@@ -10,7 +11,7 @@ function HeroSection() {
           href="https://ishan72.github.io/portfolio/Ishan_Dahal_Resume.pdf"
           download="Ishan_Dahal_Resume"
         >
-          <div className="flex cursor-pointer shadow-md py-2 px-4 lg:py-2 lg:px-8 rounded-lg text-2xl bg-button2 hover:bg-gradient-to-r from-orange-600 via-orange-900 to-text1">
+          <div className="flex cursor-pointer shadow-md py-2 px-4 lg:py-2 lg:px-8 rounded-lg text-2xl bg-button2 hover:bg-gradient-to-r from-orange-600 via-orange-900 to-text1 hover:text-white">
             <img src={downloadLogo} alt="Download icon" /> Resume
           </div>
         </a>
@@ -27,7 +28,11 @@ function HeroSection() {
       <div className="flex-1 flex flex-col justify-center items-start lg:justify-start lg:items-start text-text1 py-2 space-y-4">
         <h1 className="text-3xl 2xl:text-4xl">Hello!!</h1>
         <h2 className="text-2xl 2xl:text-4xl italic">
-          I am <strong className="text-4xl 2xl:text-6xl">Ishan Dahal</strong>.
+          I am{" "}
+          <strong className="text-4xl 2xl:text-6xl">
+            <Typewriter text="Ishan Dahal" speed={100} />
+          </strong>
+          <span className="text-4xl 2xl:text-6xl">|</span>
         </h2>
         <p className="text-xl">
           With 5+ years of software development experience, I have passion to

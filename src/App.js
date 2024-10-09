@@ -4,7 +4,7 @@ import DashArea from "./components/dashArea";
 function App() {
   return (
     <>
-      <div className="w-screen h-screen overflow-x-hidden">
+      <div className="min-h-screen">
         <DashArea />
       </div>
     </>
