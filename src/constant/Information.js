@@ -6,6 +6,13 @@ import redux from "../assets/logos/redux.svg";
 import nextjs from "../assets/logos/nextjs.svg";
 import typeScript from "../assets/logos/typescript.png";
 import github from "../assets/logos/github.svg";
+import java from "../assets/logos/java.webp";
+import springBoot from "../assets/logos/springboot.png";
+import tailwindCss from "../assets/logos/tailwind.png";
+import figma from "../assets/logos/figma.webp";
+import materialui from "../assets/logos/materialui.svg";
+import postman from "../assets/logos/postman.svg";
+import python from "../assets/logos/python.webp";
 export const StackEnum = {
   VALUE_HTML: "HTML",
   VALUE_CSS: "CSS",
@@ -44,6 +51,34 @@ export const skills = [
   {
     name: "Github",
     image: github,
+  },
+  {
+    name: "Java",
+    image: java,
+  },
+  {
+    name: "Spring Boot",
+    image: springBoot,
+  },
+  {
+    name: "Tailwind CSS",
+    image: tailwindCss,
+  },
+  {
+    name: "Figma",
+    image: figma,
+  },
+  {
+    name: "Material UI",
+    image: materialui,
+  },
+  {
+    name: "Python",
+    image: python,
+  },
+  {
+    name: "Postman",
+    image: postman,
   },
 ];
 export const projectInvolved = [
