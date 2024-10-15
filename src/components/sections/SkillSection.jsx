@@ -5,17 +5,16 @@ function SkillSection() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center space-y-32 bg-gradient-to-bl from-white via-green-400 to-white">
       <div className="text-4xl italic text-center">SKILLS</div>
-      <div className="w-5/6 md:w-2/3 flex flex-wrap gap-8">
+      <div className="w-5/6 justify-center items-center xl:w-2/3 flex flex-wrap gap-8">
         {skills.map((item, index) => {
-          let dynamicWidth = index <= 9 ? "50px" : "25px";
-          let dynamicHeight = index <= 9 ? "50px" : "25px";
+          let dynamicWidth = "50px";
+          let dynamicHeight = "50px";
 
           return (
             <div
               key={index}
-              className={`flex items-center space-x-2 ${
-                index <= 9 ? "p-4 bg-whiteGreen to-text1 rounded-2xl" : ""
-              }`}
+              className={`flex items-center space-x-2 
+                 p-4 bg-whiteGreen to-text1 rounded-2xl cursor-pointer`}
             >
               <div>
                 <img

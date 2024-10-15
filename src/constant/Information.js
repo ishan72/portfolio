@@ -61,7 +61,7 @@ export const skills = [
     image: springBoot,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     image: tailwindCss,
   },
   {

@@ -5,8 +5,12 @@ import SkillSection from "./sections/SkillSection";
 const DashArea = () => {
   return (
     <div className="h-auto font-arapey">
-      <HomePage />
-      <SkillSection />
+      <section id="home">
+        <HomePage />
+      </section>
+      <section id="skills">
+        <SkillSection />
+      </section>
     </div>
   );
 };
