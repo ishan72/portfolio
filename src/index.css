@@ -41,7 +41,7 @@
   content: "";
   position: absolute;
   width: 200px;
-  height: 250%;
+  height: 260%;
   background-image: linear-gradient(to top, #ea580c, #173b45);
   animation: animate 8s linear infinite;
 }
