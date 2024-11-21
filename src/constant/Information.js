@@ -13,6 +13,7 @@ import figma from "../assets/logos/figma.webp";
 import materialui from "../assets/logos/materialui.svg";
 import postman from "../assets/logos/postman.svg";
 import python from "../assets/logos/python.webp";
+import nodejs from "../assets/logos/nodejs.webp";
 export const StackEnum = {
   VALUE_HTML: "HTML",
   VALUE_CSS: "CSS",
@@ -24,22 +25,22 @@ export const skills = [
     name: "React JS",
     image: react,
   },
-  {
-    name: "JavaScript",
-    image: javaScript,
-  },
-  {
-    name: "HTML",
-    image: html,
-  },
-  {
-    name: "CSS",
-    image: css,
-  },
-  {
-    name: "Redux",
-    image: redux,
-  },
+  // {
+  //   name: "JavaScript",
+  //   image: javaScript,
+  // },
+  // {
+  //   name: "HTML",
+  //   image: html,
+  // },
+  // {
+  //   name: "CSS",
+  //   image: css,
+  // },
+  // {
+  //   name: "Redux",
+  //   image: redux,
+  // },
   {
     name: "Next JS",
     image: nextjs,
@@ -48,10 +49,10 @@ export const skills = [
     name: "TypeScript",
     image: typeScript,
   },
-  {
-    name: "Github",
-    image: github,
-  },
+  // {
+  //   name: "Github",
+  //   image: github,
+  // },
   {
     name: "Java",
     image: java,
@@ -61,25 +62,29 @@ export const skills = [
     image: springBoot,
   },
   {
-    name: "Tailwind",
-    image: tailwindCss,
+    name: "Node.js",
+    image: nodejs,
   },
-  {
-    name: "Figma",
-    image: figma,
-  },
-  {
-    name: "Material UI",
-    image: materialui,
-  },
-  {
-    name: "Python",
-    image: python,
-  },
-  {
-    name: "Postman",
-    image: postman,
-  },
+  // {
+  //   name: "Tailwind",
+  //   image: tailwindCss,
+  // },
+  // {
+  //   name: "Figma",
+  //   image: figma,
+  // },
+  // {
+  //   name: "Material UI",
+  //   image: materialui,
+  // },
+  // {
+  //   name: "Python",
+  //   image: python,
+  // },
+  // {
+  //   name: "Postman",
+  //   image: postman,
+  // },
 ];
 export const projectInvolved = [
   {
