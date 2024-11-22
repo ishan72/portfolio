@@ -13,10 +13,10 @@ const DashArea = () => {
       <section id="skills">
         <SkillSection />
       </section>
-      <section id="experience">
+      {/* <section id="experience">
         <ProjectSection/>
        
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 function BoxComponent({ itemName, imageName }) {
   return (
     <div
-      style={{ width: "250px", height: "250px" }}
+      style={{ width: "300px", height: "250px" }}
       className="relative border-4 border-dashed border-black"
     >
       <svg
@@ -63,7 +63,7 @@ function BoxComponent({ itemName, imageName }) {
         ></path>
       </svg>
       <div className="h-full flex flex-col">
-        <div className="h-[70%] flex items-center justify-center">
+        <div className="h-[70%] flex items-end justify-center">
           <img
             src={imageName}
             width="120px"
