@@ -25,20 +25,20 @@ function HeroSection() {
         <div className="bg-borderColor rounded-full absolute lg:w-20 lg:h-20 lg:left-52 top-44 xl:w-24 xl:h-24 xl:left-72"></div>
         <div className="border-4 border-borderColor rounded-full absolute profile-pic top-52 lg:left-44 xl:left-72 w-52 h-52"></div>
       </div>
-      <div className="flex-1 flex flex-col justify-center items-start lg:justify-start lg:items-start text-text1 py-2 space-y-4">
-        <h1 className="text-3xl 2xl:text-4xl">Hello!!</h1>
-        <h2 className="text-2xl 2xl:text-4xl italic">
+      <div className="flex-1 flex flex-col justify-center items-start lg:justify-start lg:items-start text-text1 py-2 space-y-4 md:text-xl 2xl:text-2xl">
+        <h1 className="text-xl md:text-3xl 2xl:text-4xl">Hello!!</h1>
+        <h2 className=" italic">
           I am{" "}
-          <strong className="text-4xl 2xl:text-6xl">
+          <strong className="text-3xl md:text-4xl 2xl:text-6xl">
             <Typewriter text="Ishan Dahal" speed={100} />
           </strong>
           <span className="text-4xl 2xl:text-6xl">|</span>
         </h2>
-        <p className="text-xl">
+        <p>
           With 5+ years of software development experience, I have passion to
           create visually appealing and high performing application software.
         </p>
-        <ul className="list-none w-full flex flex-col justify-center items-start text-xl space-y-4 2xl:text-2xl">
+        <ul className="list-none w-full flex flex-col justify-center items-start space-y-4">
           <li className="flex space-x-4">
             <img src={checkmarkLogo} alt="checkmark" />
             <p className="italic">
