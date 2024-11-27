@@ -9,12 +9,10 @@ function Container({ index, title, children }) {
           : "bg-gradient-to-tl from-white via-green-400 to-white"
       }`}
     >
-        <div className="">
-          <p className="text-4xl italic">{title}</p>
-        </div>
-          <div className="h-full flex justify-center items-center">
-            {children}
-          </div>
+      <div className="">
+        <p className="text-4xl italic">{title}</p>
+      </div>
+      <div className="h-full flex justify-center items-center">{children}</div>
     </div>
   );
 }

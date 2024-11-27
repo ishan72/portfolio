@@ -1,7 +1,6 @@
 import React from "react";
 import HomePage from "./HomePageComponent";
 import SkillSection from "./sections/SkillSection";
-import Container from "../UI/Container";
 import ProjectSection from "./sections/ProjectSection";
 
 const DashArea = () => {
@@ -13,10 +12,9 @@ const DashArea = () => {
       <section id="skills">
         <SkillSection />
       </section>
-      {/* <section id="experience">
-        <ProjectSection/>
-       
-      </section> */}
+      <section id="projects">
+        <ProjectSection />
+      </section>
     </div>
   );
 };

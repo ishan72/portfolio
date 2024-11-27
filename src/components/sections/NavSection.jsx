@@ -11,8 +11,9 @@ function NavSection() {
         <Link to="skills" smooth={true} duration={1000}>
           <li className="hover:border-b-4 hover:border-white">Skills</li>
         </Link>
-
-        {/* <li>Project</li> */}
+        <Link to="projects" smooth={true} duration={2000}>
+          <li className="hover:border-b-4 hover:border-white">Projects</li>
+        </Link>
       </ul>
     </>
   );
