@@ -12,7 +12,9 @@ function Container({ index, title, children }) {
       <div className="">
         <p className="text-4xl italic">{title}</p>
       </div>
-      <div className="h-full flex justify-center items-center">{children}</div>
+      <div className="h-full w-11/12 lg:w-5/6 flex justify-center items-center">
+        {children}
+      </div>
     </div>
   );
 }

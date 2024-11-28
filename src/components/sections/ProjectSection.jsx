@@ -5,9 +5,9 @@ import CardComponent from "../../UI/CardComponent";
 function ProjectSection() {
   return (
     <Container index={3} title={"PROJECT"}>
-      <div className=""></div>
-      <p>sdfadsf</p>
-      <p>sdfasd</p>
+      <div className="w-full">
+        <CardComponent />
+      </div>
     </Container>
   );
 }
