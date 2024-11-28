@@ -31,17 +31,23 @@ function CardComponent() {
         <div
           style={{
             background:
-              "linear-gradient(to right, rgba(255, 140, 0, 0.5), rgba(153, 51, 0, 0.8), rgba(255, 255, 255, 0.6))",
+              " radial-gradient(ellipse, rgba(255, 140, 0, 0.5), rgba(153, 51, 0, 0.5), rgba(255, 255, 255, 0.4))",
           }}
           className={`${
             !isHover ? "hidden" : "visible"
           } text-white h-full w-1/2 flex flex-col space-y-4 items-center justify-center rounded-r-2xl border-l-2 border-white border-dotted`}
         >
-          <div className="flex items-center justify-center space-x-2 text-3xl">
-            <FaExternalLinkAlt />
-            <div className="underline">View</div>
-          </div>
-          <h2 className="text-3xl text-white">PPSC</h2>
+          <a
+            href="https://ppsconline.karnali.gov.np/#/login"
+            target="_blank"
+            rel="nofollow"
+          >
+            <div className="flex items-center justify-center space-x-2 text-3xl">
+              <FaExternalLinkAlt />
+              <div className="underline">View</div>
+            </div>
+          </a>
+          <h2 className="text-3xl text-white tracking-widest">PPSC</h2>
         </div>
       </div>
     </div>

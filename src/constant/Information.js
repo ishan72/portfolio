@@ -24,47 +24,37 @@ export const skills = [
   {
     name: "React JS",
     image: react,
+    link: "https://react.dev/blog/2023/03/16/introducing-react-dev",
   },
-  // {
-  //   name: "JavaScript",
-  //   image: javaScript,
-  // },
-  // {
-  //   name: "HTML",
-  //   image: html,
-  // },
-  // {
-  //   name: "CSS",
-  //   image: css,
-  // },
-  // {
-  //   name: "Redux",
-  //   image: redux,
-  // },
   {
     name: "Next JS",
     image: nextjs,
+    link: "https://nextjs.org/docs",
   },
   {
     name: "TypeScript",
     image: typeScript,
+    link: "https://www.typescriptlang.org/docs/",
+  },
+  {
+    name: "Java",
+    image: java,
+    link: "https://docs.oracle.com/en/java/",
+  },
+  {
+    name: "Spring Boot",
+    image: springBoot,
+    link: "https://docs.spring.io/spring-boot/documentation.html",
+  },
+  {
+    name: "Node.js",
+    image: nodejs,
+    link: "https://nodejs.org/docs/latest/api/",
   },
   // {
   //   name: "Github",
   //   image: github,
   // },
-  {
-    name: "Java",
-    image: java,
-  },
-  {
-    name: "Spring Boot",
-    image: springBoot,
-  },
-  {
-    name: "Node.js",
-    image: nodejs,
-  },
   // {
   //   name: "Tailwind",
   //   image: tailwindCss,
@@ -84,6 +74,22 @@ export const skills = [
   // {
   //   name: "Postman",
   //   image: postman,
+  // },
+  // {
+  //   name: "JavaScript",
+  //   image: javaScript,
+  // },
+  // {
+  //   name: "HTML",
+  //   image: html,
+  // },
+  // {
+  //   name: "CSS",
+  //   image: css,
+  // },
+  // {
+  //   name: "Redux",
+  //   image: redux,
   // },
 ];
 export const projectInvolved = [
