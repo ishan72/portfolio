@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
-import logo from "../assets/logos/ppsckarnali.jpeg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-function CardComponent() {
+function CardComponent({ itemName, itemImage, itemLink }) {
   const [isHover, setIsHover] = useState(false);
   const divRef = useRef(null);
 
@@ -22,11 +21,11 @@ function CardComponent() {
       ref={divRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="w-[clamp(200px,_50%,_400px)] h-[clamp(100px,_20vw,_400px)]"
+      className="w-[clamp(250px,_50%,_400px)] h-[clamp(250px,_20vw,_400px)]"
     >
       <div
-        className="h-full flex items-center justify-end rounded-2xl bg-cover bg-center"
-        style={{ backgroundImage: `url(${logo})` }}
+        className="h-full shadow-cardShadow flex items-center justify-end rounded-2xl bg-cover bg-center"
+        style={{ backgroundImage: `url(${itemImage})` }}
       >
         <div
           style={{
@@ -37,17 +36,15 @@ function CardComponent() {
             !isHover ? "hidden" : "visible"
           } text-white h-full w-1/2 flex flex-col space-y-4 items-center justify-center rounded-r-2xl border-l-2 border-white border-dotted`}
         >
-          <a
-            href="https://ppsconline.karnali.gov.np/#/login"
-            target="_blank"
-            rel="nofollow"
-          >
-            <div className="flex items-center justify-center space-x-2 text-3xl">
+          <a href={itemLink ? itemLink : ""} target="_blank" rel="nofollow">
+            <div className="flex items-center justify-center space-x-2 text-lg md:text-3xl">
               <FaExternalLinkAlt />
-              <div className="underline">View</div>
+              <div className="underline tracking-wider">View</div>
             </div>
           </a>
-          <h2 className="text-3xl text-white tracking-widest">PPSC</h2>
+          <h2 className="text-lg md:text-3xl text-white tracking-widest">
+            {itemName}
+          </h2>
         </div>
       </div>
     </div>
